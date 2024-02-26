@@ -1,4 +1,5 @@
 @use 'variables.scss';
+@use 'responsive.scss';
 
   
 .amet-section {
@@ -14,6 +15,11 @@
    .mot-card {
     display: flex;
     column-gap: variables.$spacing-md;
+    .card-item.bg-white-linear.netelpa {
+        @include responsive.md {
+        display: none;
+        }
+    } 
     .card-item {
       border-radius: 8px;
       padding: 50px 20px;
@@ -32,6 +38,10 @@
           color: variables.$color-white;
       }  
       
+        
+    }
+    
+    
     .card-image {
       margin-bottom: variables.$spacing-xs;
   }
@@ -40,4 +50,3 @@
   }
 }
 
-}

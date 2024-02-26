@@ -1,4 +1,5 @@
 @use 'variables.scss';
+@use 'responsive.scss';
 
 .page-footer {
     margin-top: variables.$spacing-xl;
@@ -11,11 +12,17 @@
       padding-right: variables.$spacing-xl;
       padding-top: variables.$spacing-xl;
       background-color: #F0DCC5;
+      
 
       .footer-container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         column-gap: variables.$spacing-xl;
+        @include responsive.lg {
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+          }
         .footer-content-wrapper {
           ul.footer-list.footer-socials-list {
             display: flex;

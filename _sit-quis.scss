@@ -6,9 +6,27 @@
       justify-content: space-between;
       }
       .cto {
-      display: grid;
-      grid-template-columns: repeat(4, 30%);
-      column-gap: variables.$spacing-xs;
-      }
-
+        display: flex;
+        column-gap: 10px;
+        .cto-1 {
+            background-color: white;
+            border-radius: 5px;
+        }
+    
+            .men {
+                display: flex;
+                p.cto-name {
+                    font-size: 19px;
+                }
+                p.cto-forname {
+                    font-size: 13px;
+                    color: variables.$color-gray2;
+                }
+            }  
+            p.cto-description {
+                font-size: 16px;
+                font-style: italic;
+                color: variables.$color-gray2;
+            }
+    }
   }

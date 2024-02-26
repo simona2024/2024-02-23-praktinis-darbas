@@ -2,12 +2,22 @@
 
 .people-section {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     column-gap: variables.$spacing-xl;
+    .image-content {
+        width: 50%;
+        .people-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
     .consectet-content {
       display: flex;
       flex-direction: column;
       row-gap: variables.$spacing-xs;
+      width: 50%;
   }
   
     }
