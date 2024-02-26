@@ -1,0 +1,27 @@
+@use 'variables.scss';
+
+.lorem-section {
+    display: flex;
+    justify-content: space-evenly;
+    justify-content: space-around;
+    column-gap: variables.$spacing-xl;
+    padding-left: variables.$spacing-lg;
+    padding-right: variables.$spacing-lg;
+
+    .lorem-content {
+        
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            column-gap: variables.$spacing-sm;
+            width: 100%;
+            row-gap: variables.$spacing-xs;
+            
+    }
+    .lorem-img {
+        width: 100%;
+        .img {
+            max-width: 100%
+        }
+    }
+  }

@@ -1,0 +1,71 @@
+@use 'variables.scss';
+
+.consectet-sectio {
+    display: flex;
+    justify-content: space-evenly;
+    justify-content: space-around;
+    column-gap: variables.$spacing-xl;
+    padding-left: variables.$spacing-lg;
+    padding-right: variables.$spacing-lg;
+
+    .consectet-content {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      row-gap: variables.$spacing-xs;
+      
+      .content-bg-image {
+        background-image: url("/Rectangle\ 491.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+  }
+    .consectet-card {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: variables.$spacing-sm;
+    .card-item {
+      
+      border-radius: 10px;
+      padding: variables.$spacing-md;
+      display: flex;
+      flex-direction: column;
+      row-gap: variables.$spacing-xs;
+
+      &.bg-white {
+        background-color: variables.$color-white;
+      }
+
+      .p-small {
+        margin: 0;
+        font-size: 13px;
+        text-shadow: none;
+      }
+    }
+
+      .card-image {
+        background-color: variables.$color-white;
+        width: 48px;
+        height: 48px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        object-fit: contain;
+        &.bg-gree {
+          background-color: variables.$color-primary;
+        }
+
+        .card-name {
+          color: variables.$color-gray;
+          size: 24px;
+      }
+
+        
+    }
+  }
+
+    
+    
+  }

@@ -1,0 +1,14 @@
+@use 'variables.scss';
+
+.sit-quis-section {
+    .sit-scrol {
+      display: flex;
+      justify-content: space-between;
+      }
+      .cto {
+      display: grid;
+      grid-template-columns: repeat(4, 30%);
+      column-gap: variables.$spacing-xs;
+      }
+
+  }

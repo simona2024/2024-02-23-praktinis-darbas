@@ -1,0 +1,13 @@
+@use 'variables.scss';
+
+.people-section {
+    display: flex;
+    align-items: center;
+    column-gap: variables.$spacing-xl;
+    .consectet-content {
+      display: flex;
+      flex-direction: column;
+      row-gap: variables.$spacing-xs;
+  }
+  
+    }

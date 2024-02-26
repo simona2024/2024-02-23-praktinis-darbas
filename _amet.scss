@@ -1,0 +1,43 @@
+@use 'variables.scss';
+
+  
+.amet-section {
+    display: flex;
+    flex-direction: column;
+    row-gap: variables.$spacing-md;
+
+    .amet-title {
+      align-items: center;
+      text-align: center;
+  }
+
+   .mot-card {
+    display: flex;
+    column-gap: variables.$spacing-md;
+    .card-item {
+      border-radius: 8px;
+      padding: 50px 20px;
+      &.bg-white-linear {
+        background-color: variables.$color-white;
+        // background-image: url("/Dots\ 8px.1.svg");
+        // background-image: ( transparent 1px);
+        
+      }
+      &.bg-green {
+          background-color: variables.$color-primary;
+          p.p-small.p-white {
+            color: variables.$color-white;
+        }
+        span.card-name.title-white {
+          color: variables.$color-white;
+      }  
+      
+    .card-image {
+      margin-bottom: variables.$spacing-xs;
+  }
+  }
+  
+  }
+}
+
+}
